@@ -9,7 +9,7 @@ const NOOP = "noop"
 
 type NoOp struct{}
 
-func NewNoOP() Cache                                                               { return &NoOp{} }
+func NewNoOP() *NoOp                                                               { return &NoOp{} }
 func (n *NoOp) ID() string                                                         { return NOOP }
 func (n *NoOp) WithOptions(opts ...Option) Cache                                   { return n }
 func (n *NoOp) Get(ctx context.Context, key string, value interface{}) (err error) { return nil }
