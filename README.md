@@ -3,17 +3,11 @@
 the basic interfaces & managers to define expectations and vocabulary.
 
 ```
-+-----------+           +---------+
-| xConnect  | ------>   | xAddons |
-+----+------+           +-----+---+
-     |                        |
-     |                        |
-     +------------+-----------+
-                  |
-                  |
-                  V
-             +-----------+ 
-             | xService  | 
-             +-----------+
+            +-----------+                                               +---------+
+            | xConnect  | ----- foundation for pluggable addons --->    | xAddons |
+            +----+------+                                               +-----+---+                            
 
 ```
+
+## Available Interfaces & Managers
+* Cache
